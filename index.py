@@ -9,7 +9,7 @@ with col1:
             st.switch_page("index.py")
 with col2:
         if st.button("🛡️ Prediction"):
-            st.switch_page("pages/predict.py")
+            st.switch_page("pagespredict.py")
 with col3:
         if st.button("Model"):
             st.switch_page("pages/model.py")
