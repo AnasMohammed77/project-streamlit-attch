@@ -9,14 +9,14 @@ with col1:
             st.switch_page("index.py")
 with col2:
         if st.button("🛡️ Prediction"):
-            st.switch_page("pages/predict.py")
+            st.switch_page("predict.py")
 with col3:
         if st.button("Model"):
-            st.switch_page("pages/model.py")
+            st.switch_page("model.py")
 
 with col4:
         if st.button("About"):
-            st.switch_page("pages/About.py")
+            st.switch_page("About.py")
 
 
 col_1,col_2,col_3=st.columns([1,3,1])
