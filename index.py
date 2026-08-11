@@ -18,19 +18,19 @@ col1,col2,col3,col4=st.columns(4)
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    if st.button("🏠 Home", use_container_width=True):
+    if st.button("Home"):
         st.switch_page("index.py")
 
 with col2:
-    if st.button("🛡️ Prediction", use_container_width=True):
+    if st.button("Prediction"):
         st.switch_page("pages/predict.py")
 
 with col3:
-    if st.button("📊 Model", use_container_width=True):
+    if st.button("Model"):
         st.switch_page("pages/model.py")
 
 with col4:
-    if st.button("ℹ️ About", use_container_width=True):
+    if st.button("About"):
         st.switch_page("pages/About.py")
 with st.container(border=True):
 
