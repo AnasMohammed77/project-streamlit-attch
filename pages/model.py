@@ -129,7 +129,7 @@ to that class
 #### F1-Score: 77.20%
 F1-Score provides a balance between Precision and Recall
 #### Confusion Matrix:
-               Confusion Matrix:
+                       Confusion Matrix:
             [[  294   113    14     3     0     0     2     0     2     0]
              [  230    83    15     2     3     2     0     4    12     1]
              [  235   104   372   248    17    10     2    29    58     0]
