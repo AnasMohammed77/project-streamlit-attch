@@ -64,34 +64,34 @@ If an attack is detected, the model identifies the attack category.
 #### Prediction Process:
 
 
-* Network Traffic
+  * Network Traffic
          ↓
-* Feature Extraction
+  * Feature Extraction
          ↓
-* Data Preprocessing 
+  * Data Preprocessing 
          ↓
-* Random Forest
+  * Random Forest
          ↓
-* Multiple Decision Trees
+  * Multiple Decision Trees 
          ↓
-* Voting
+  * Voting
          ↓
-* Final Prediction
+  * Final Prediction
          ↓
-* Normal / Attack Type
+  * Normal / Attack Type
 #### Model Configuration:
- ______________________________________________
-| Parameter             | Value              |
-|_______________________|____________________|
-| Algorithm             | Random Forest      |
-| Number of Trees       | 150                |
-| Maximum Depth         | 15                 |
-| Minimum Samples Split | 4                  |
-| Bootstrap             | True               |
-| Random State          | 42                 |
-| Classification Type   | Multi-Class        |
-| class_weight          | balanced           |
-|_______________________|____________________|
+    ______________________________________________
+  | Parameter             | Value              |
+  |_______________________|____________________|
+  | Algorithm             | Random Forest      |
+  | Number of Trees       | 150                |
+  | Maximum Depth         | 15                 |
+  | Minimum Samples Split | 4                  |
+  | Bootstrap             | True               |
+  | Random State          | 42                 |
+  | Classification Type   | Multi-Class        |
+  | class_weight          | balanced           |
+  |_______________________|____________________|
 1. Number of Trees: The model uses 150 Decision Trees to produce
 the final prediction.
 2. Maximum Depth: Each tree can grow up to a maximum depth of 15.
@@ -130,16 +130,16 @@ to that class
 F1-Score provides a balance between Precision and Recall
 #### Confusion Matrix:
 Confusion Matrix:
-[[  294   113    14     3     0     0     2     0     2     0]
-[  230    83    15     2     3     2     0     4    12     1]
-[  235   104   372   248    17    10     2    29    58     0]
-[  259   104   289  4206   125    31     3   364   132    34]
-[  227   110    14    45  3623     5    35     5    80     0]
-[   55     9    24    72    15  1351     0     1     3     4]
-[  556     7    71   162  3759     2 12425    12   117     1]
-[  191    61     9    27     6     1     0  1717    23     5]
-[    1     1     0     0    22     0     0     1   259     0]
-[    0     0     0     5     0     0     0     1     0    27]]
+    [[  294   113    14     3     0     0     2     0     2     0]
+    [  230    83    15     2     3     2     0     4    12     1]
+    [  235   104   372   248    17    10     2    29    58     0]
+    [  259   104   289  4206   125    31     3   364   132    34]
+    [  227   110    14    45  3623     5    35     5    80     0]
+    [   55     9    24    72    15  1351     0     1     3     4]
+    [  556     7    71   162  3759     2 12425    12   117     1]
+    [  191    61     9    27     6     1     0  1717    23     5]
+    [    1     1     0     0    22     0     0     1   259     0]
+    [    0     0     0     5     0     0     0     1     0    27]]
 
 The Confusion Matrix shows the number of correct and incorrect predictions for 
 each attack category  
@@ -147,20 +147,20 @@ each attack category
 #### Classification Report:
      precision    recall  f1-score   support
 
-0       0.14      0.69      0.24       428
-1       0.14      0.24      0.18       352
-2       0.46      0.35      0.40      1075
-3       0.88      0.76      0.82      5547
-4       0.48      0.87      0.62      4144
-5       0.96      0.88      0.92      1534
-6       1.00      0.73      0.84     17112
-7       0.80      0.84      0.82      2040
-8       0.38      0.91      0.53       284
-9       0.38      0.82      0.51        33
+   0       0.14      0.69      0.24       428
+   1       0.14      0.24      0.18       352
+   2       0.46      0.35      0.40      1075
+   3       0.88      0.76      0.82      5547
+   4       0.48      0.87      0.62      4144
+   5       0.96      0.88      0.92      1534
+   6       1.00      0.73      0.84     17112
+   7       0.80      0.84      0.82      2040
+   8       0.38      0.91      0.53       284
+   9       0.38      0.82      0.51        33
 
-accuracy                        0.75     32549
-macro avg       0.56      0.71      0.59     32549
-weighted avg    0.85      0.75      0.78     32549
+   accuracy                        0.75     32549
+  macro avg       0.56      0.71      0.59     32549
+  weighted avg    0.85      0.75      0.78     32549
 Display the following metrics for each attack category:
 
 
