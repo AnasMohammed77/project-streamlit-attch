@@ -1,233 +1,418 @@
 import streamlit as st
 
-# --------------------------------------------------
+
+# =========================================================
 # Page Configuration
-# --------------------------------------------------
+# =========================================================
+
 st.set_page_config(
     page_title="Cyber Attack Detection",
     page_icon="🛡️",
     layout="wide"
 )
 
-# --------------------------------------------------
-# Responsive CSS
-# --------------------------------------------------
+
+# =========================================================
+# CSS - Responsive Design
+# =========================================================
+
 st.markdown("""
 <style>
+
+/* ------------------------------
+   Main application background
+------------------------------ */
 
 .stApp {
     background-color: #eef2f9;
 }
 
-/* Main content */
+
+/* ------------------------------
+   Main content width
+------------------------------ */
+
 .block-container {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-/* Navigation buttons */
+
+/* ------------------------------
+   Navigation buttons
+------------------------------ */
+
 div.stButton > button {
+
     width: 100%;
+
     background-color: #9CA3AF;
+
     color: white;
+
     border: 1px solid #6B7280;
+
     border-radius: 10px;
+
     padding: 8px 5px;
-    font-size: 16px;
+
+    font-size: 15px;
+
     font-weight: 600;
-    transition: 0.2s;
 }
 
+
+/* Button hover */
+
 div.stButton > button:hover {
+
     background-color: #6B7280;
+
     color: white;
+
     border-color: #4B5563;
 }
 
-/* Main container */
-.main-card {
+
+/* ------------------------------
+   Main container
+------------------------------ */
+
+.main-content {
+
     background-color: white;
+
     padding: 30px;
+
     border-radius: 20px;
+
     margin-top: 20px;
+
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-/* Main title */
+
+/* ------------------------------
+   Main title
+------------------------------ */
+
 .main-title {
+
     text-align: center;
+
     font-size: 32px;
+
     font-weight: bold;
+
     margin: 20px 0;
+
+    line-height: 1.4;
 }
 
-/* Section title */
+
+/* ------------------------------
+   Section titles
+------------------------------ */
+
 .section-title {
-    font-size: 24px;
+
+    font-size: 23px;
+
     font-weight: bold;
+
     margin-top: 25px;
+
+    margin-bottom: 10px;
 }
 
-/* Statistics table */
+
+/* ------------------------------
+   Description
+------------------------------ */
+
+.description {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #374151;
+}
+
+
+/* ------------------------------
+   Statistics table
+------------------------------ */
+
 .stats-table {
+
     width: 100%;
+
     border-collapse: collapse;
-    margin-top: 15px;
+
     text-align: center;
-    overflow: hidden;
+
+    margin-top: 15px;
+
+    background-color: white;
+
     border-radius: 10px;
+
+    overflow: hidden;
 }
 
-.stats-table th,
-.stats-table td {
+
+.stats-table th {
+
+    background-color: rgb(255,100,120);
+
+    color: white;
+
     padding: 12px;
+
     border: 1px solid #ddd;
 }
 
-.stats-table th {
-    background-color: #ff6478;
-    color: white;
+
+.stats-table td {
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    color: #222;
 }
 
+
 .stats-table tr:nth-child(even) {
+
     background-color: #f3f4f6;
 }
 
-/* Developer card */
+
+/* ------------------------------
+   Developer card
+------------------------------ */
+
 .developer-card {
+
     border: 2px dashed #9CA3AF;
+
     margin-top: 40px;
+
     padding: 20px;
-    border-radius: 20px;
+
+    border-radius: 30px;
+
     text-align: center;
+
     background-color: #f9fafb;
 }
 
+
 .footer {
+
     margin-top: 20px;
+
     padding: 10px;
-    background-color: #111827;
+
+    border-radius: 8px;
+
+    background-color: black;
+
     color: white;
+
     text-align: center;
-    border-radius: 10px;
 }
 
 
-/* --------------------------------------------------
-   Mobile Responsive Design
-   -------------------------------------------------- */
+/* =========================================================
+   Mobile
+========================================================= */
 
 @media (max-width: 768px) {
 
+
+    /* Page spacing */
+
     .block-container {
+
         padding-left: 3%;
+
         padding-right: 3%;
+
         padding-top: 1rem;
     }
 
-    /* Navigation buttons */
+
+    /* Navigation */
+
     div.stButton > button {
-        font-size: 12px;
+
+        font-size: 11px;
+
         padding: 7px 2px;
-        border-radius: 8px;
+
+        border-radius: 7px;
     }
 
-    /* Main card */
-    .main-card {
+
+    /* Main content */
+
+    .main-content {
+
         padding: 15px;
+
         border-radius: 15px;
     }
 
-    /* Title */
+
+    /* Main title */
+
     .main-title {
-        font-size: 22px;
-        line-height: 1.4;
+
+        font-size: 21px;
+
+        line-height: 1.5;
     }
 
-    /* Section titles */
+
+    /* Section title */
+
     .section-title {
+
         font-size: 19px;
     }
 
-    /* Text */
+
+    /* Description */
+
     .description {
+
         font-size: 14px;
+
         line-height: 1.7;
     }
 
-    /* Image */
-    .responsive-image img {
-        max-width: 100%;
-        height: auto;
+
+    /* Statistics table */
+
+    .stats-table {
+
+        font-size: 12px;
+
+        width: 100%;
     }
 
-    /* Table */
-    .stats-table {
-        font-size: 12px;
-    }
 
     .stats-table th,
     .stats-table td {
+
         padding: 8px 4px;
     }
 
+
     /* Developer */
+
     .developer-card {
+
         padding: 15px;
+
         font-size: 13px;
     }
 
+
+    /* Footer */
+
     .footer {
+
         font-size: 12px;
     }
+
 }
 
 </style>
 """, unsafe_allow_html=True)
 
 
-# --------------------------------------------------
+# =========================================================
 # Navigation
-# --------------------------------------------------
+# =========================================================
 
 col1, col2, col3, col4 = st.columns(4)
 
+
 with col1:
-    if st.button("Home", use_container_width=True):
+
+    if st.button(
+        "Home",
+        use_container_width=True
+    ):
+
         st.switch_page("index.py")
 
+
 with col2:
-    if st.button("🛡️ Prediction", use_container_width=True):
+
+    if st.button(
+        "🛡️ Prediction",
+        use_container_width=True
+    ):
+
         st.switch_page("pages/predict.py")
 
+
 with col3:
-    if st.button("Model", use_container_width=True):
+
+    if st.button(
+        "Model",
+        use_container_width=True
+    ):
+
         st.switch_page("pages/model.py")
 
+
 with col4:
-    if st.button("About", use_container_width=True):
+
+    if st.button(
+        "About",
+        use_container_width=True
+    ):
+
         st.switch_page("pages/About.py")
 
 
-# --------------------------------------------------
+# =========================================================
 # Main Content
-# --------------------------------------------------
+# =========================================================
 
 with st.container(border=True):
 
-    st.markdown('<div class="main-card">', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="main-content">',
+        unsafe_allow_html=True
+    )
 
+
+    # -----------------------------------------------------
     # Image
+    # -----------------------------------------------------
+
     col1, col2, col3 = st.columns([1, 3, 1])
 
     with col2:
+
         st.image(
             "imge.jpg",
             use_container_width=True
         )
 
+
+    # -----------------------------------------------------
     # Title
+    # -----------------------------------------------------
+
     st.markdown(
         """
         <div class="main-title">
@@ -237,36 +422,50 @@ with st.container(border=True):
         unsafe_allow_html=True
     )
 
-    # --------------------------------------------------
-    # System Overview
-    # --------------------------------------------------
 
-    st.markdown(
-        '<div class="section-title">1. System Overview</div>',
-        unsafe_allow_html=True
-    )
+    # =====================================================
+    # 1. System Overview
+    # =====================================================
 
     st.markdown(
         """
-        <div class="description">
-        An intelligent system that leverages Machine Learning
-        techniques to detect and classify cyber attacks by analyzing
-        network traffic data. The system is designed to help
-        cybersecurity professionals identify threats quickly and
-        accurately.
+        <div class="section-title">
+            1. System Overview
         </div>
         """,
         unsafe_allow_html=True
     )
 
-    # --------------------------------------------------
-    # Objectives
-    # --------------------------------------------------
 
     st.markdown(
-        '<div class="section-title">2. Project Objectives</div>',
+        """
+        <div class="description">
+
+        An intelligent system that leverages Machine Learning
+        techniques to detect and classify cyber attacks by analyzing
+        network traffic data. The system is designed to help
+        cybersecurity professionals identify threats quickly
+        and accurately.
+
+        </div>
+        """,
         unsafe_allow_html=True
     )
+
+
+    # =====================================================
+    # 2. Project Objectives
+    # =====================================================
+
+    st.markdown(
+        """
+        <div class="section-title">
+            2. Project Objectives
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
     st.markdown(
         """
@@ -283,22 +482,31 @@ with st.container(border=True):
         unsafe_allow_html=True
     )
 
-    # --------------------------------------------------
-    # Model Information
-    # --------------------------------------------------
+
+    # =====================================================
+    # 3. Model Information
+    # =====================================================
 
     st.markdown(
-        '<div class="section-title">3. Model Information</div>',
+        """
+        <div class="section-title">
+            3. Model Information
+        </div>
+        """,
         unsafe_allow_html=True
     )
+
 
     st.markdown(
         """
         <div class="description">
 
         - 🤖 <b>Algorithm:</b> Random Forest
+        <br>
         - 📊 <b>Dataset:</b> UNSW-NB15
+        <br>
         - 🔢 <b>Number of Features:</b> 13 Features
+        <br>
         - 🛡️ <b>Number of Attack Categories:</b> 10 Categories
 
         </div>
@@ -306,88 +514,117 @@ with st.container(border=True):
         unsafe_allow_html=True
     )
 
-    # --------------------------------------------------
-    # Quick Statistics
-    # --------------------------------------------------
+
+    # =====================================================
+    # 4. Quick Statistics
+    # =====================================================
 
     st.markdown(
-        '<div class="section-title">4. Quick Statistics</div>',
+        """
+        <div class="section-title">
+            4. Quick Statistics (Dashboard)
+        </div>
+        """,
         unsafe_allow_html=True
     )
-st.markdown(""" 
-  
-                <h2> 4. Quick Statistics (Dashboard)</h2>
-  
-                
-  
-                <table style="background-color:silver;text-algin:center;margin:0px 50px;width:80%">
-  
-                <tr style="background-color:rgb(255,100,120)">
-  
-                <th>Metric</th>            <th>Value</th>
-  
-                </tr>
-  
 
-  
-                <tr>
-  
-                <td>📂 Total Samples</td>            <td>257,673</td>
-  
-                </tr>
-  
 
-  
-                <tr>
-  
-                <td>🛡️ Attack Categories</td>            <td>10</td>
-  
-                </tr>
-  
+    st.markdown(
+        """
+        <table class="stats-table">
 
-  
-                <tr>
-  
-                <td> 🎯 Model Accuracy</td>            <td>75.9%</td>
-  
-                </tr>
-  
-                
-  
-                <tr>
-  
-                <td> ⚡️ Prediction Time </td>            <td>0.03 sec</td>
-  
-                </tr>
-  
-                </table>
-  
-                
-  
-            
-  
+            <tr>
 
-  
-    """ ,unsafe_allow_html=True)
-  
-        
-  
+                <th>
+                    Metric
+                </th>
 
-    # --------------------------------------------------
+                <th>
+                    Value
+                </th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    📂 Total Samples
+                </td>
+
+                <td>
+                    257,673
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    🛡️ Attack Categories
+                </td>
+
+                <td>
+                    10
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    🎯 Model Accuracy
+                </td>
+
+                <td>
+                    75.9%
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    ⚡ Prediction Time
+                </td>
+
+                <td>
+                    0.03 sec
+                </td>
+
+            </tr>
+
+        </table>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+    # =====================================================
     # Developer
-    # --------------------------------------------------
-st.markdown(
+    # =====================================================
+
+    st.markdown(
         """
         <div class="developer-card">
 
-            <h4>Developed by:</h4>
+            <h4>
+                Developed by:
+            </h4>
 
-            <b>Student: Anas Mohammed Abd Alijalyl Saeed</b>
+            <b>
+                Student: Anas Mohammed Abd ALijalyl Saeed
+            </b>
 
             <p>
-                Department of Artificial Intelligence<br>
+                Department of Artificial Intelligence
+                <br>
                 University of Taiz
             </p>
+
 
             <div class="footer">
                 © 2026
@@ -395,6 +632,11 @@ st.markdown(
 
         </div>
         """,
-        unsafe_allow_html=True)
+        unsafe_allow_html=True
+    )
 
 
+    st.markdown(
+        '</div>',
+        unsafe_allow_html=True
+)
