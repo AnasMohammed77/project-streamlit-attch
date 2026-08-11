@@ -314,7 +314,6 @@ with st.container(border=True):
         '<div class="section-title">4. Quick Statistics</div>',
         unsafe_allow_html=True
     )
-
 st.markdown(""" 
   
                 <h2> 4. Quick Statistics (Dashboard)</h2>
