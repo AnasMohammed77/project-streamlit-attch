@@ -79,26 +79,26 @@ cybersecurityhe system is designed to help cycybersecuritprofessionals identify 
                 <h2> 4. Quick Statistics (Dashboard)</h2>
                 
 <table style="background-color:silver;text-algin:center;margin:0px 50px;width:80%">
-        <tr style="background-color:rgb(255,100,120)">
+       <tr style="background-color:rgb(255,100,120)">
         <th>Metric</th>            <th>Value</th>
-        </tr>
+      </tr>
 
-         <tr>
-        <td>📂 Total Samples</td>            <td>257,673</td>
-         </tr>
+      <tr>
+           <td>📂 Total Samples</td>            <td>257,673</td>
+       </tr>
 
         <tr>
-         <td>🛡️ Attack Categories</td>            <td>10</td>
+             <td>🛡️ Attack Categories</td>            <td>10</td>
         </tr>
 
          <tr>
-         <td> 🎯 Model Accuracy</td>            <td>75.9%</td>
+             <td> 🎯 Model Accuracy</td>            <td>75.9%</td>
         </tr>
                 
         <tr>
-        <td> ⚡️ Prediction Time </td>            <td>0.03 sec</td>
+            <td> ⚡️ Prediction Time </td>            <td>0.03 sec</td>
         </tr>
-        </table>
+</table>
                 
             
 
