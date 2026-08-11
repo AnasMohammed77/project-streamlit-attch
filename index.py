@@ -13,35 +13,35 @@ st.set_page_config(
 
 
 # =========================================================
-# CSS - Responsive Design
+# CSS
 # =========================================================
 
 st.markdown("""
 <style>
 
-/* ------------------------------
-   Main application background
------------------------------- */
+/* =====================================================
+   Page Background
+===================================================== */
 
 .stApp {
     background-color: #eef2f9;
 }
 
 
-/* ------------------------------
-   Main content width
------------------------------- */
+/* =====================================================
+   Navigation
+===================================================== */
 
-.block-container {
-    padding-top: 1.5rem;
-    padding-left: 5%;
-    padding-right: 5%;
+.nav-container {
+    background-color: white;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
 }
 
 
-/* ------------------------------
-   Navigation buttons
------------------------------- */
+/* Navigation buttons */
 
 div.stButton > button {
 
@@ -63,7 +63,7 @@ div.stButton > button {
 }
 
 
-/* Button hover */
+/* Hover */
 
 div.stButton > button:hover {
 
@@ -75,63 +75,69 @@ div.stButton > button:hover {
 }
 
 
-/* ------------------------------
-   Main container
------------------------------- */
+/* =====================================================
+   Cards
+===================================================== */
 
-.main-content {
+.card {
 
     background-color: white;
 
-    padding: 30px;
+    padding: 25px;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
     margin-top: 20px;
 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+
+    border: 1px solid #e5e7eb;
 }
 
 
-/* ------------------------------
-   Main title
------------------------------- */
+/* =====================================================
+   Main Title
+===================================================== */
 
 .main-title {
 
     text-align: center;
 
-    font-size: 32px;
+    font-size: 30px;
 
     font-weight: bold;
 
-    margin: 20px 0;
+    color: #1f2937;
 
-    line-height: 1.4;
+    margin-top: 10px;
+
+    margin-bottom: 20px;
 }
 
 
-/* ------------------------------
-   Section titles
------------------------------- */
+/* =====================================================
+   Section Titles
+===================================================== */
 
 .section-title {
 
-    font-size: 23px;
+    font-size: 22px;
 
     font-weight: bold;
 
-    margin-top: 25px;
+    color: #1f2937;
 
     margin-bottom: 10px;
 }
 
 
-/* ------------------------------
-   Description
------------------------------- */
+/* =====================================================
+   Text
+===================================================== */
 
-.description {
+.card-text {
 
     font-size: 16px;
 
@@ -141,9 +147,9 @@ div.stButton > button:hover {
 }
 
 
-/* ------------------------------
-   Statistics table
------------------------------- */
+/* =====================================================
+   Statistics Table
+===================================================== */
 
 .stats-table {
 
@@ -154,18 +160,12 @@ div.stButton > button:hover {
     text-align: center;
 
     margin-top: 15px;
-
-    background-color: white;
-
-    border-radius: 10px;
-
-    overflow: hidden;
 }
 
 
 .stats-table th {
 
-    background-color: rgb(255,100,120);
+    background-color: #ff6478;
 
     color: white;
 
@@ -181,7 +181,7 @@ div.stButton > button:hover {
 
     border: 1px solid #ddd;
 
-    color: #222;
+    color: #374151;
 }
 
 
@@ -191,60 +191,45 @@ div.stButton > button:hover {
 }
 
 
-/* ------------------------------
-   Developer card
------------------------------- */
+/* =====================================================
+   Developer Card
+===================================================== */
 
 .developer-card {
 
+    background-color: white;
+
+    padding: 25px;
+
     border: 2px dashed #9CA3AF;
 
-    margin-top: 40px;
-
-    padding: 20px;
-
-    border-radius: 30px;
+    border-radius: 20px;
 
     text-align: center;
 
-    background-color: #f9fafb;
+    margin-top: 25px;
 }
 
 
 .footer {
 
-    margin-top: 20px;
+    background-color: #111827;
+
+    color: white;
 
     padding: 10px;
 
     border-radius: 8px;
 
-    background-color: black;
-
-    color: white;
-
-    text-align: center;
+    margin-top: 15px;
 }
 
 
-/* =========================================================
-   Mobile
-========================================================= */
+/* =====================================================
+   Mobile Responsive
+===================================================== */
 
 @media (max-width: 768px) {
-
-
-    /* Page spacing */
-
-    .block-container {
-
-        padding-left: 3%;
-
-        padding-right: 3%;
-
-        padding-top: 1rem;
-    }
-
 
     /* Navigation */
 
@@ -258,9 +243,9 @@ div.stButton > button:hover {
     }
 
 
-    /* Main content */
+    /* Cards */
 
-    .main-content {
+    .card {
 
         padding: 15px;
 
@@ -282,13 +267,13 @@ div.stButton > button:hover {
 
     .section-title {
 
-        font-size: 19px;
+        font-size: 18px;
     }
 
 
-    /* Description */
+    /* Text */
 
-    .description {
+    .card-text {
 
         font-size: 14px;
 
@@ -296,13 +281,11 @@ div.stButton > button:hover {
     }
 
 
-    /* Statistics table */
+    /* Table */
 
     .stats-table {
 
         font-size: 12px;
-
-        width: 100%;
     }
 
 
@@ -322,14 +305,6 @@ div.stButton > button:hover {
         font-size: 13px;
     }
 
-
-    /* Footer */
-
-    .footer {
-
-        font-size: 12px;
-    }
-
 }
 
 </style>
@@ -337,8 +312,14 @@ div.stButton > button:hover {
 
 
 # =========================================================
-# Navigation
+# Navigation Bar
 # =========================================================
+
+st.markdown(
+    '<div class="nav-container">',
+    unsafe_allow_html=True
+)
+
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -383,260 +364,249 @@ with col4:
         st.switch_page("pages/About.py")
 
 
+st.markdown(
+    '</div>',
+    unsafe_allow_html=True
+)
+
+
 # =========================================================
-# Main Content
+# Main Image Card
 # =========================================================
 
-with st.container(border=True):
+st.markdown(
+    '<div class="card">',
+    unsafe_allow_html=True
+)
 
-    st.markdown(
-        '<div class="main-content">',
-        unsafe_allow_html=True
+
+col1, col2, col3 = st.columns([1, 3, 1])
+
+with col2:
+
+    st.image(
+        "imge.jpg",
+        use_container_width=True
     )
 
 
-    # -----------------------------------------------------
-    # Image
-    # -----------------------------------------------------
-
-    col1, col2, col3 = st.columns([1, 3, 1])
-
-    with col2:
-
-        st.image(
-            "imge.jpg",
-            use_container_width=True
-        )
+st.markdown(
+    '</div>',
+    unsafe_allow_html=True
+)
 
 
-    # -----------------------------------------------------
-    # Title
-    # -----------------------------------------------------
+# =========================================================
+# Main Title
+# =========================================================
 
-    st.markdown(
-        """
+st.markdown(
+    """
+    <div class="card">
+
         <div class="main-title">
             AI-Based Cyber Attack Detection and Classification System
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
-    # =====================================================
-    # 1. System Overview
-    # =====================================================
+# =========================================================
+# 1. System Overview
+# =========================================================
 
-    st.markdown(
-        """
+st.markdown(
+    """
+    <div class="card">
+
         <div class="section-title">
             1. System Overview
         </div>
-        """,
-        unsafe_allow_html=True
-    )
 
-
-    st.markdown(
-        """
-        <div class="description">
+        <div class="card-text">
 
         An intelligent system that leverages Machine Learning
         techniques to detect and classify cyber attacks by analyzing
-        network traffic data. The system is designed to help
-        cybersecurity professionals identify threats quickly
-        and accurately.
+        network traffic data.
+
+        The system is designed to help cybersecurity professionals
+        identify threats quickly and accurately.
 
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
-    # =====================================================
-    # 2. Project Objectives
-    # =====================================================
+# =========================================================
+# 2. Project Objectives
+# =========================================================
 
-    st.markdown(
-        """
+st.markdown(
+    """
+    <div class="card">
+
         <div class="section-title">
             2. Project Objectives
         </div>
-        """,
-        unsafe_allow_html=True
-    )
 
+        <div class="card-text">
 
-    st.markdown(
-        """
-        <div class="description">
+        <p>🎯 The main objectives of the system are:</p>
 
-        - ✅ Detect cyber attacks.
-        - ✅ Classify attack types.
-        - ✅ Display prediction confidence.
-        - ✅ Provide a user-friendly interface.
-        - ✅ Improve threat detection and response speed.
+        <ul>
+
+            <li>✅ Detect cyber attacks.</li>
+
+            <li>✅ Classify attack types.</li>
+
+            <li>✅ Display prediction confidence.</li>
+
+            <li>✅ Provide a user-friendly interface.</li>
+
+            <li>✅ Improve threat detection and response speed.</li>
+
+        </ul>
 
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
-    # =====================================================
-    # 3. Model Information
-    # =====================================================
+# =========================================================
+# 3. Model Information
+# =========================================================
 
-    st.markdown(
-        """
+st.markdown(
+    """
+    <div class="card">
+
         <div class="section-title">
             3. Model Information
         </div>
-        """,
-        unsafe_allow_html=True
-    )
 
+        <div class="card-text">
 
-    st.markdown(
-        """
-        <div class="description">
+        <p>🤖 <b>Algorithm:</b> Random Forest</p>
 
-        - 🤖 <b>Algorithm:</b> Random Forest
-        <br>
-        - 📊 <b>Dataset:</b> UNSW-NB15
-        <br>
-        - 🔢 <b>Number of Features:</b> 13 Features
-        <br>
-        - 🛡️ <b>Number of Attack Categories:</b> 10 Categories
+        <p>📊 <b>Dataset:</b> UNSW-NB15</p>
+
+        <p>🔢 <b>Number of Features:</b> 13 Features</p>
+
+        <p>🛡️ <b>Number of Attack Categories:</b> 10 Categories</p>
 
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
-    # =====================================================
-    # 4. Quick Statistics
-    # =====================================================
+# =========================================================
+# 4. Quick Statistics
+# =========================================================
 
-    st.markdown(
-        """
+st.markdown(
+    """
+    <div class="card">
+
         <div class="section-title">
             4. Quick Statistics (Dashboard)
         </div>
-        """,
-        unsafe_allow_html=True
-    )
 
-
-    st.markdown(
-        """
         <table class="stats-table">
 
             <tr>
 
-                <th>
-                    Metric
-                </th>
+                <th>Metric</th>
 
-                <th>
-                    Value
-                </th>
+                <th>Value</th>
 
             </tr>
 
 
             <tr>
 
-                <td>
-                    📂 Total Samples
-                </td>
+                <td>📂 Total Samples</td>
 
-                <td>
-                    257,673
-                </td>
+                <td>257,673</td>
 
             </tr>
 
 
             <tr>
 
-                <td>
-                    🛡️ Attack Categories
-                </td>
+                <td>🛡️ Attack Categories</td>
 
-                <td>
-                    10
-                </td>
+                <td>10</td>
 
             </tr>
 
 
             <tr>
 
-                <td>
-                    🎯 Model Accuracy
-                </td>
+                <td>🎯 Model Accuracy</td>
 
-                <td>
-                    75.9%
-                </td>
+                <td>75.9%</td>
 
             </tr>
 
 
             <tr>
 
-                <td>
-                    ⚡ Prediction Time
-                </td>
+                <td>⚡ Prediction Time</td>
 
-                <td>
-                    0.03 sec
-                </td>
+                <td>0.03 sec</td>
 
             </tr>
 
         </table>
-        """,
-        unsafe_allow_html=True
-    )
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
-    # =====================================================
-    # Developer
-    # =====================================================
+# =========================================================
+# Developer
+# =========================================================
 
-    st.markdown(
-        """
-        <div class="developer-card">
+st.markdown(
+    """
+    <div class="developer-card">
 
-            <h4>
-                Developed by:
-            </h4>
+        <h3>
+            Developed by
+        </h3>
 
-            <b>
-                Student: Anas Mohammed Abd ALijalyl Saeed
-            </b>
+        <b>
+            Student: Anas Mohammed Abd ALijalyl Saeed
+        </b>
 
-            <p>
-                Department of Artificial Intelligence
-                <br>
-                University of Taiz
-            </p>
+        <p>
+            Department of Artificial Intelligence
+            <br>
+            University of Taiz
+        </p>
 
 
-            <div class="footer">
-                © 2026
-            </div>
+        <div class="footer">
+
+            © 2026
 
         </div>
-        """,
-        unsafe_allow_html=True
-    )
 
-
-    st.markdown(
-        '</div>',
-        unsafe_allow_html=True
+    </div>
+    """,
+    unsafe_allow_html=True
 )
