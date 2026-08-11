@@ -78,7 +78,7 @@ cybersecurityhe system is designed to help cycybersecuritprofessionals identify 
     st.markdown(""" 
                 <h2> 4. Quick Statistics (Dashboard)</h2>
                 
-<table style="background-color:silver;text-algin:center;margin:0px 50px;width:80%">
+<table style="background-color:silver;text-algin:center;margin:0px 50px;width:100%">
 <tr style="background-color:rgb(255,100,120)">
 <th>Metric</th>            <th>Value</th>
 </tr>
