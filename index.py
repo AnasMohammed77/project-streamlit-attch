@@ -1,24 +1,37 @@
 import streamlit as st
 
-
+st.markdown("""
+<style>
+div.stButton > button {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+}
+</style>
+""", unsafe_allow_html=True)
 
 col1,col2,col3,col4=st.columns(4)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-        if st.button("Home"):
-            st.switch_page("index.py")
+    if st.button("🏠 Home", use_container_width=True):
+        st.switch_page("index.py")
+
 with col2:
-        if st.button("🛡️ Prediction"):
-            st.switch_page("pages/predict.py")
+    if st.button("🛡️ Prediction", use_container_width=True):
+        st.switch_page("pages/predict.py")
+
 with col3:
-        if st.button("Model"):
-            st.switch_page("pages/model.py")
+    if st.button("📊 Model", use_container_width=True):
+        st.switch_page("pages/model.py")
 
 with col4:
-        if st.button("About"):
-            st.switch_page("pages/About.py")
-
-
+    if st.button("ℹ️ About", use_container_width=True):
+        st.switch_page("pages/About.py")
 with st.container(border=True):
 
     st.markdown(
