@@ -50,58 +50,55 @@ with st.container(border=True):
                 """
                 ,unsafe_allow_html=True)
     st.markdown("""#### 1.System Overview
-        An intelligent system that leverages Machine Learning
-        techniques to detect and classify cyber attacks by analyzing network
-        traffic data. The system is designed to help cybersecurity
-        professionals identify threats quickly and accurately
+An intelligent system that leverages Machine Learning
+An to detect and classify cyber attacks by analyzing network
+cybersecurityhe system is designed to help cycybersecuritprofessionals identify threats quickly and accurately
                 """)
 
     st.markdown("#### 2. Project Objectives")
     st.markdown("""
-                
-            ###### . Display the objectives inside a card:
-                
-                - ✅ Detect cyber attacks.
-                - ✅ Classify attack types.
-                - ✅ Display prediction confidence.
-                - ✅ Provide a user-friendly interface.
-                - ✅ Improve threat detection and response speed.
+        
+- ✅ Detect cyber attacks.
+- ✅ Classify attack types.
+- ✅ Display prediction confidence.
+- ✅ Provide a user-friendly interface.
+- ✅ Improve threat detection and response speed.
 
                 
                 """)
 
     st.markdown(""" #### 3. Model Information:
-            - Algorithm :Random Forest
-            - Dataset:UNSW-NB15
-            - Number of Features : 13 Feature
-            - Number of Attack Categories : 10 Categories
+- Algorithm :Random Forest
+- Dataset:UNSW-NB15
+- Number of Features : 13 Feature
+- Number of Attack Categories : 10 Categories
     """)
 
 
     st.markdown(""" 
                 <h2> 4. Quick Statistics (Dashboard)</h2>
                 
-                <table style="background-color:silver;text-algin:center;margin:0px 50px;width:80%">
-                <tr style="background-color:rgb(255,100,120)">
-                <th>Metric</th>            <th>Value</th>
-                </tr>
+<table style="background-color:silver;text-algin:center;margin:0px 50px;width:80%">
+        <tr style="background-color:rgb(255,100,120)">
+        <th>Metric</th>            <th>Value</th>
+        </tr>
 
-                <tr>
-                <td>📂 Total Samples</td>            <td>257,673</td>
-                </tr>
+         <tr>
+        <td>📂 Total Samples</td>            <td>257,673</td>
+         </tr>
 
-                <tr>
-                <td>🛡️ Attack Categories</td>            <td>10</td>
-                </tr>
+        <tr>
+         <td>🛡️ Attack Categories</td>            <td>10</td>
+        </tr>
 
-                <tr>
-                <td> 🎯 Model Accuracy</td>            <td>75.9%</td>
-                </tr>
+         <tr>
+         <td> 🎯 Model Accuracy</td>            <td>75.9%</td>
+        </tr>
                 
-                <tr>
-                <td> ⚡️ Prediction Time </td>            <td>0.03 sec</td>
-                </tr>
-                </table>
+        <tr>
+        <td> ⚡️ Prediction Time </td>            <td>0.03 sec</td>
+        </tr>
+        </table>
                 
             
 
