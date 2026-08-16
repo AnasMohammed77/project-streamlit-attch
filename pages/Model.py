@@ -47,9 +47,9 @@ with st.container(border=True):
         st.markdown("""    
         <div style="background:#9CA3AF;font-size:20px;padding:20px;border-radius:25px;">
         <div style="background:white;font-size:1px;padding:20px;border-radius:25px;margin:10px 0">
-                <h2 style="color:blue;">1.🤖 Machine Learning Algorithm<h2>
-                <h3>1.1 Random Forest Classifier:<h3>
-        <i style="font-size:20px;">
+                <h4 style="color:blue;">1.🤖 Machine Learning Algorithm<h4>
+                <h5>1.1 Random Forest Classifier:<h5>
+        <i style="font-size:10px;">
 
         <p>
                         Random Forest is a supervised Machine Learning algorithm that combines
