@@ -47,8 +47,8 @@ with st.container(border=True):
         st.markdown("""    
         <div style="background:#9CA3AF;font-size:20px;padding:20px;border-radius:25px;">
         <div style="background:white;font-size:1px;padding:20px;border-radius:25px;margin:10px 0">
-                <h4 style="color:blue;">1.🤖 Machine Learning Algorithm<h4>
-                <h5>1.1 Random Forest Classifier:<h5>
+                <h5 style="color:blue;">1.🤖 Machine Learning Algorithm<h5>
+                <h6>1.1 Random Forest Classifier:<h5>
         <i style="font-size:10px;">
 
         <p>
@@ -68,8 +68,8 @@ with st.container(border=True):
         </i>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px">
-                <h3>1.2 Why Random Forest for Cyber Attack Detection?:<h3>
-        <i style="font-size:20px;">
+                <h6>1.2 Why Random Forest for Cyber Attack Detection?:<h6>
+        <i style="font-size:10px;">
 
         <p>
                 .Random Forest is suitable for cyber attack detection because network 
@@ -92,7 +92,7 @@ with st.container(border=True):
                 
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
                 <h3>1.3 Random Forest in This Project:<h3>
-        <i style="font-size:20px;">
+        <i style="font-size:10px;">
 
         <p>
                 .In this project, Random Forest is used to analyze network traffic features 
@@ -106,16 +106,14 @@ with st.container(border=True):
         </div>
 
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
-        <h2 style="color:blue">2. Prediction Process:</h2>
+        <h6 style="color:blue">2. Prediction Process:</h5>
 
 
 
-
-                                * Network Traffic
-                                        ↓
-                                * Feature Extraction
-                                        ↓
-                                * Data Preprocessing
+     * Network traffic                       ↓
+     * Feature Extraction
+              ↓
+     * Data Preprocessing
                                         ↓
                                 * Random Forest
                                         ↓
