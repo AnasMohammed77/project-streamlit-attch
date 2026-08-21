@@ -74,7 +74,7 @@ st.markdown("""
        ========================= */
 
     .main-content {
-        background-color: #9CA3AF;
+        
         padding: 20px;
         border-radius: 25px;
     }
