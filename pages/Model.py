@@ -1,4 +1,99 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="AI Project",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
+st.markdown("""
+<style>
+
+    /* إزالة المساحات الزائدة */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    /* الأزرار */
+    .stButton > button {
+        width: 100%;
+        min-height: 45px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    /* البطاقات */
+    .card {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    /* الصور */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* الشاشات المتوسطة */
+    @media (max-width: 900px) {
+
+        .block-container {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .card {
+            padding: 16px;
+        }
+
+    }
+
+    /* الجوال */
+    @media (max-width: 600px) {
+
+        .block-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 1rem;
+        }
+
+        .card {
+            padding: 14px;
+            border-radius: 12px;
+        }
+
+        .stButton > button {
+            min-height: 42px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 28px !important;
+        }
+
+        h2 {
+            font-size: 23px !important;
+        }
+
+        h3 {
+            font-size: 19px !important;
+        }
+
+    }
+
+</style>
+""", unsafe_allow_html=True)
 st.markdown(
         """
     <style>
@@ -277,9 +372,7 @@ with col_2:
                 st.switch_page("pages/Prediction.py")
 
                 
-        import seaborn as sns
-        import matplotlib.pyplot as plt
-        import pandas as pd
+        
 
         matrix=[[294  , 113,    14 ,    3  ,   0 ,    0  ,   2 ,    0 ,    2 ,    0],
                 [230 ,   83  ,  15,     2  ,   3 ,    2   ,  0 ,    4  ,  12  ,   1],
