@@ -56,7 +56,7 @@ st.markdown("""
 
     /* Cards */
     .card {
-        background-color: white;
+        background-color: green;
         padding: 25px;
         border-radius: 25px;
         margin: 15px 0;
