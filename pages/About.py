@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlite as st
 st.markdown(
         """
     <style>
