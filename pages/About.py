@@ -341,27 +341,26 @@ st.markdown("""
 st.markdown("""
 <div class="contact">
 
-    <h2>Contact Me</h2>
+<h2>Contact Me</h2>
 
-    <a href="mailto:alsnwyansmhmdbdaljlyl@gmail.com">
+<a href="mailto:alsnwyansmhmdbdaljlyl@gmail.com">
         📧 Email
-    </a>
+</a>
 
-    <a href="https://wa.me/967776713367">
+<a href="https://wa.me/967776713367">
         📱 WhatsApp
-    </a>
+</a>
 
-    <a href="https://m.me/ans.mhmd.alsnwy">
-        💬 Messenger
-    </a>
+<a href="https://m.me/ans.mhmd.alsnwy">
+        💬 Messenger</a>
 
-    <a href="https://www.facebook.com/share/19Fw8BRK99/">
+<a href="https://www.facebook.com/share/19Fw8BRK99/">
         👍 Facebook
     </a>
 
-    <a href="https://t.me/Anas_Alsanwy" target="_blank">
+<a href="https://t.me/Anas_Alsanwy" target="_blank">
         ✈️ Telegram
-    </a>
+</a>
 
 </div>
 """, unsafe_allow_html=True)
@@ -384,20 +383,19 @@ if st.button("🔍 Prediction", width="stretch"):
 st.markdown("""
 <div class="developer">
 
-    <h4>Developed by:</h4>
+<h4>Developed by:</h4>
 
-    <b>
+<b>
         Student: Anas Mohammed Abd ALijalyl Saeed
-    </b>
+</b>
 
-    <p>
+<p>
         Department of Artificial Intelligence<br>
         University of Taiz
-    </p>
-
-    <div class="copyright">
+</p>
+<div class="copyright">
         © 2026
-    </div>
+</div>
 
 </div>
 """, unsafe_allow_html=True)
