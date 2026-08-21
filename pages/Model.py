@@ -261,6 +261,7 @@ with col_2:
                 The Confusion Matrix shows the number of correct and incorrect predictions for 
                 each attack category  
         </p>
+        </i>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
@@ -292,7 +293,7 @@ with col_2:
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/share/19Fw8BRK99/">Facebook</a></p>
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><i class="fab fa-telegram"></i> <a href="https://t.me/Anas_Alsanwy" target="_blank">Telegram</a></p>
         </div> 
-        </i>
+        
         </div>   
 
         </div>
