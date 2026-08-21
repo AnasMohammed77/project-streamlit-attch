@@ -266,79 +266,64 @@ with col2:
 with st.container(border=True):
 
     st.markdown("""
-    <div class="main-content">
+<div class="main-content">
 
-        <!-- =======================
-             System Overview
-        ======================== -->
 
-        <div class="card">
 
-            <h3>1. System Overview</h3>
+<div class="card">
 
-            <p>
+<h3>1. System Overview</h3>
+
+<p>
                 An intelligent system that leverages Machine Learning
                 techniques to detect and classify cyber attacks by analyzing
                 network traffic data.
-            </p>
+</p>
 
-            <p>
+<p>
                 The system is designed to help cybersecurity professionals
                 identify threats quickly and accurately.
-            </p>
+</p>
 
-        </div>
+</div>
 
 
-        <!-- =======================
-             Project Objectives
-        ======================== -->
+<div class="card">
 
-        <div class="card">
+<h3>2. Project Objectives</h3>
 
-            <h3>2. Project Objectives</h3>
-
-            <ul>
+<ul>
                 <li>Detect cyber attacks.</li>
                 <li>Classify attack types.</li>
                 <li>Display prediction confidence.</li>
                 <li>Provide a user-friendly interface.</li>
                 <li>Improve threat detection and response speed.</li>
-            </ul>
+</ul>
+</div>
 
-        </div>
 
+<div class="card">
 
-        <!-- =======================
-             Model Information
-        ======================== -->
+<h3>3. Model Information</h3>
 
-        <div class="card">
-
-            <h3>3. Model Information</h3>
-
-            <ul>
+<ul>
                 <li><b>Algorithm:</b> Random Forest</li>
                 <li><b>Dataset:</b> UNSW-NB15</li>
                 <li><b>Number of Features:</b> 13 Features</li>
                 <li><b>Number of Classes:</b> 10 Classes</li>
                 <li><b>Task:</b> Multi-Class Classification</li>
-            </ul>
+</ul>
 
-        </div>
+</div>
 
 
-        <!-- =======================
-             Quick Statistics
-        ======================== -->
+        
 
-        <div class="card">
+<div class="card">
 
-            <h3 class="stats-title">
-                4. Quick Statistics
-            </h3>
+<h3 class="stats-title"> 4. Quick Statistics</h3>
 
-            <table class="stats-table">
+<table class="stats-table">
 
                 <tr>
                     <th>Metric</th>
@@ -365,11 +350,9 @@ with st.container(border=True):
                     <td>0.03 sec</td>
                 </tr>
 
-            </table>
-
-        </div>
-
-    </div>
+</table>
+</div>
+</div>
     """, unsafe_allow_html=True)
 
 
