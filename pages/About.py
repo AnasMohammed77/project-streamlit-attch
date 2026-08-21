@@ -246,20 +246,17 @@ with col_2:
 
 st.markdown("""
 <div class="card">
-
-    <h3>Project Overview</h3>
-
-    <p>
+<h3>Project Overview</h3>
+<p>
         This project is an AI-based cybersecurity system designed to detect
         and classify cyber attacks by analyzing network traffic data using
         Machine Learning techniques.
-    </p>
-
-    <p>
+</p>
+<p>
         The system analyzes network traffic features and predicts whether the
         traffic is normal or malicious. If an attack is detected, the system
         identifies its type and provides the prediction confidence.
-    </p>
+</p>
 
 </div>
 """, unsafe_allow_html=True)
@@ -272,15 +269,15 @@ st.markdown("""
 st.markdown("""
 <div class="card">
 
-    <h3>Project Objectives</h3>
+<h3>Project Objectives</h3>
 
-    <ul>
+<ul>
         <li>Detect cyber attacks.</li>
         <li>Classify attack types.</li>
         <li>Display prediction confidence.</li>
         <li>Provide a user-friendly interface.</li>
         <li>Improve threat detection and response speed.</li>
-    </ul>
+</ul>
 
 </div>
 """, unsafe_allow_html=True)
@@ -293,45 +290,45 @@ st.markdown("""
 st.markdown("""
 <div class="card">
 
-    <h3>Technologies Used</h3>
+<h3>Technologies Used</h3>
 
-    <h4>🐍 Python</h4>
+<h4>🐍 Python</h4>
 
-    <p>
+<p>
         Python is used as the main programming language for data processing,
         model development, and application development.
-    </p>
+</p>
 
 
-    <h4>🎨 Streamlit</h4>
+<h4>🎨 Streamlit</h4>
 
-    <p>
+<p>
         Streamlit is used to build the interactive web interface for the system.
-    </p>
+</p>
 
 
-    <h4>⚡ FastAPI</h4>
+<h4>⚡ FastAPI</h4>
 
-    <p>
+<p>
         FastAPI is used to create the API that receives network data,
         processes it, and communicates with the Machine Learning model.
-    </p>
+</p>
 
 
-    <h4>🤖 Scikit-learn</h4>
+<h4>🤖 Scikit-learn</h4>
 
-    <p>
+<p>
         Scikit-learn is used for data preprocessing, model training,
         evaluation, and prediction.
-    </p>
+</p>
 
 
-    <h4>🐼 Pandas</h4>
+<h4>🐼 Pandas</h4>
 
-    <p>
+<p>
         Pandas is used for loading, cleaning, processing, and analyzing
         the dataset.
-    </p>
+</p>
 
 </div>
 """, unsafe_allow_html=True)
