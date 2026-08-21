@@ -115,8 +115,9 @@ with col_2:
         <h6 style="color:blue">2. Prediction Process:</h5>
 
 
-
-     * Network traffic                       ↓
+      <pre>
+     * Network traffic    
+              ↓
      * Feature Extraction
               ↓
      * Data Preprocessing
@@ -130,6 +131,7 @@ with col_2:
      * Final Prediction
               ↓
      * Normal / Attack Type
+     </pre>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
@@ -182,12 +184,12 @@ with col_2:
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
-        <h3>3.1 Size & Structure: </h3>
+        <h3 style="font-size:15 ">3.1 Size & Structure: </h3>
         <p>
                 It contains approximately 2.5 million records distributed across 45 
                 features, including class labels.
         </p>
-        <h3>3.2 Attack Categories</h3>
+        <h3 style="font-size:15 ">3.2 Attack Categories</h3>
         <p>
                 It covers nine distinct attack types: Fuzzers, Analysis, Backdoors,
                 DoS, Exploits, Generic, Reconnaissance, Shellcode, and Worms.
@@ -195,7 +197,7 @@ with col_2:
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
         <i style="font-size:10px;">
-        <h3>3.3 Features:</h3>
+        <h3 style="font-size:15 ">3.3 Features:</h3>
         <p>
                 Includes flow features, basic features, content features, time features,
                 and additional generated features.Purpose: Designed to overcome the
@@ -205,22 +207,22 @@ with col_2:
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
-        <h3> Task: Multi-Class Classification</h3>
-        <h3> Number of Classes: 10</h3>
-        <h3> Accuracy: 75.40%</h3>
+        <h3 style="font-size:15 "> Task: Multi-Class Classification</h3>
+        <h3 style="font-size:15 "> Number of Classes: 10</h3>
+        <h3 style="font-size:15 "> Accuracy: 75.40%</h3>
         <p>
         Accuracy represents the percentage of all predictions that were correctly classified.
         </p>
-        <h3> Precision: 85.80%</h3>
+        <h3  style="font-size:15 "> Precision: 85.80%</h3>
         <p>
         Precision measures how many of the samples predicted as a particular class actually 
         belong to that class
         </p>
-        <h3> Precision: 75.80%</h3>
+        <h3 style="font-size:15 "> Precision: 75.80%</h3>
         <p> Precision measures how many of the samples predicted as a particular class actually belong 
         to that class
         </p>
-        <h3>  F1-Score: 77.20%</h3>
+        <h3 style="font-size:15 ">  F1-Score: 77.20%</h3>
         <p> F1-Score provides a balance between Precision and Recall</p>
         </i>
         </div>
