@@ -239,9 +239,9 @@ with col4:
 # =========================================================
 
 st.markdown("""
-<h2 class="main-title">
+<h4 class="main-title">
     🛡️ AI-Based Cyber Attack Detection and Classification System
-</h2>
+</h4>
 """, unsafe_allow_html=True)
 
 
