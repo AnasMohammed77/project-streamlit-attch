@@ -97,7 +97,7 @@ with col_2:
                 
                 
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
-                <h3>1.3 Random Forest in This Project:<h3>
+                <h3 style="font-size:15px ">1.3 Random Forest in This Project:<h3>
         <i style="font-size:10px;">
 
         <p>
@@ -118,19 +118,33 @@ with col_2:
       
      * Network traffic    
               ↓
+              
      * Feature Extraction
+     
               ↓
+              
      * Data Preprocessing
+     
               ↓
+              
      * Random Forest
+     
               ↓
+              
      * Multiple Decision Tree
+     
               ↓
+              
      * Votive 
+     
               ↓
+              
      * Final Prediction
+     
               ↓
+              
      * Normal / Attack Type
+     
      
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
