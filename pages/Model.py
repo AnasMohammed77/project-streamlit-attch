@@ -209,32 +209,33 @@ with col_2:
      * Feature Extraction
               ↓
      * Data Preprocessing
+              ↓
+       * Random Forest
                                         ↓
-                                * Random Forest
-                                        ↓
-                                * Multiple Decision Trees
-                                        ↓
-                                * Voting
-                                        ↓
-                                * Final Prediction
-                                        ↓
-                                * Normal / Attack Type
+       * Multiple Decision Tree
+             ↓
+       * Votive 
+             ↓
+      * Final Prediction
+             ↓
+      * Normal / Attack Type
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
         ### 2.1 Model Configuration:
-                        ______________________________________________
-                        | Parameter             | Value              |
-                        |_______________________|____________________|
-                        | Algorithm             | Random Forest      |
-                        | Number of Trees       | 150                |
-                        | Maximum Depth         | 15                 |
-                        | Minimum Samples Split | 4                  |
-                        | Bootstrap             | True               |
-                        | Random State          | 42                 |
-                        | Classification Type   | Multi-Class        |
-                        | class_weight          | balanced           |
-                        |_______________________|____________________|
+                ______________________________________________
+                | Parameter             | Value              |
+                |_______________________|____________________|
+                | Algorithm             | Random Forest      |
+                | Number of Trees       | 150                |
+                | Maximum Depth         | 15                 |
+                | Minimum Samples Split | 4                  |
+                | Bootstrap             | True               |
+                | Random State          | 42                 |
+                | Classification Type   | Multi-Class        |
+                | class_weight          | balanced           |
+                |_______________________|____________________|
+        <i style="font-size:10px;">
         <h5>        1. Number of Trees:</h5>
         <p>
                 The model uses 150 Decision Trees to producethe final prediction.
@@ -252,9 +253,10 @@ with col_2:
         Bootstrap sampling is enabled, allowing each tree to be trained
         using a randomly sampled subset of the training data. 
         </p>   
+        </i>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
-
+        <i style="font-size:10px;">
         <h2 style="color:blue">3. Dataset:</h2>
         <p>
                 The UNSW-NB15 dataset is a modern benchmark dataset widely used for 
@@ -265,6 +267,7 @@ with col_2:
                 of real modern normal activities and synthetic contemporary attack
                 behaviors.
         </p>
+        </i>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
@@ -280,7 +283,7 @@ with col_2:
         </p>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
-
+        <i style="font-size:10px;">
         <h3>3.3 Features:</h3>
         <p>
                 Includes flow features, basic features, content features, time features,
@@ -308,6 +311,7 @@ with col_2:
         </p>
         <h3>  F1-Score: 77.20%</h3>
         <p> F1-Score provides a balance between Precision and Recall</p>
+        </i>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
@@ -324,6 +328,7 @@ with col_2:
                 [    1     1     0     0    22     0     0     1   259     0]
                 [    0     0     0     5     0     0     0     1     0    27]]
 
+        <i style="font-size:10px;">
         <p>
                 The Confusion Matrix shows the number of correct and incorrect predictions for 
                 each attack category  
@@ -359,6 +364,7 @@ with col_2:
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none;margin:5px 250px"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/share/19Fw8BRK99/">Facebook</a></p>
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none;margin:5px 250px"><i class="fab fa-telegram"></i> <a href="https://t.me/Anas_Alsanwy" target="_blank">Telegram</a></p>
         </div> 
+        </i>
         </div>   
 
         </div>
