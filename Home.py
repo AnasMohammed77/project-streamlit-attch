@@ -26,6 +26,7 @@ st.markdown("""
 
     .block-container {
         max-width: 1400px;
+        background-color: #F5F5F5;
         padding: 2rem 5%;
         margin: auto;
     }
@@ -263,9 +264,7 @@ with col2:
 # Main Content
 # =========================================================
 
-with st.container(border=True):
-
-    st.markdown("""
+st.markdown("""
 <div class="main-content">
 
 
@@ -358,7 +357,6 @@ with st.container(border=True):
 # =========================================================
 # Prediction Button
 # =========================================================
-
 st.write("")
 
 if st.button("🔍 Prediction", width="stretch"):
