@@ -338,6 +338,18 @@ st.markdown("""
 # Contact Me
 # =========================
 
+
+
+# =========================
+# Prediction Button
+# =========================
+
+st.write("")
+
+if st.button("🔍 Prediction", width="stretch"):
+    st.switch_page("pages/Prediction.py")
+
+
 st.markdown("""
 <div class="contact">
 
@@ -364,18 +376,6 @@ st.markdown("""
 
 </div>
 """, unsafe_allow_html=True)
-
-
-# =========================
-# Prediction Button
-# =========================
-
-st.write("")
-
-if st.button("🔍 Prediction", width="stretch"):
-    st.switch_page("pages/Prediction.py")
-
-
 # =========================
 # Developer
 # =========================
