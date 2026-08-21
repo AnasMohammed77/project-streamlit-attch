@@ -22,6 +22,7 @@ st.markdown("""
 
     /* Main container */
     .block-container {
+    background-color: green;
         max-width: 1400px;
         padding: 2rem 5%;
         margin: auto;
@@ -56,7 +57,7 @@ st.markdown("""
 
     /* Cards */
     .card {
-        background-color: green;
+        background-color: White;
         padding: 25px;
         border-radius: 25px;
         margin: 15px 0;
