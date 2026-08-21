@@ -46,7 +46,7 @@ with col_2:
 
 
         st.markdown("""
-        #### Evaluate the performance of the Machine Learning model using standard classification metrics
+        ###### Evaluate the performance of the Machine Learning model using standard classification metrics
 
         """)
 
@@ -117,6 +117,7 @@ with col_2:
 
       
      * Network traffic    
+     
               ↓
               
      * Feature Extraction
