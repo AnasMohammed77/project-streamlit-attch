@@ -22,7 +22,7 @@ st.markdown("""
 
     /* Main container */
     .block-container {
-    background-color: green;
+    background-color: #F5F5F5;
         max-width: 1400px;
         padding: 2rem 5%;
         margin: auto;
