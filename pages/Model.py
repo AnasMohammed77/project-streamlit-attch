@@ -286,8 +286,8 @@ with col_2:
         </div>
                 <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
         <div style="text-align:center;border-radius:10px;border:2px dashed;">
-        <h2 style="background:#00ffff;border-radius:25px;">Contact Me</h2>
-                        <p style="border-radius:70px;background:#00ffff;text-decoration:none;"><a href="https://mailto:alsnwyansmhmdbdaljlyl@gmail.com"> @Emial.com</a></p>
+        <h2 style="background:#00ffff;border-radius:25px; margin-bottom:5px">Contact Me</h2>
+                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><a href="https://mailto:alsnwyansmhmdbdaljlyl@gmail.com"> @Emial.com</a></p>
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><i class="fa-brands fa-whatsapp"></i></i><a href="https://wa.me/967776713367">WhatsApp</a></a></p>
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://m.me/ans.mhmd.alsnwy">Messenger</a></p>
                         <p style="border-radius:50px;background:#00ffff;text-decoration:none"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/share/19Fw8BRK99/">Facebook</a></p>
