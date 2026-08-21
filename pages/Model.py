@@ -37,7 +37,7 @@ st.markdown("""
 col_1,col_2,col_3=st.columns([1,5,1])
 with col_2:
         st.image("imge.jpg")
-with st.container(border=True):
+
 
         st.markdown("""
         #### Evaluate the performance of the Machine Learning model using standard classification metrics
