@@ -325,30 +325,29 @@ with st.container(border=True):
 
 <table class="stats-table">
 
-                <tr>
+<tr>
                     <th>Metric</th>
                     <th>Value</th>
-                </tr>
+</tr>
 
-                <tr>
+<tr>
                     <td>📂 Total Samples</td>
                     <td>257,673</td>
-                </tr>
-
-                <tr>
+</tr>
+<tr>
                     <td>🛡️ Attack Categories</td>
                     <td>10</td>
-                </tr>
+</tr>
 
-                <tr>
+<tr>
                     <td>🎯 Model Accuracy</td>
                     <td>75.40%</td>
-                </tr>
+</tr>
 
-                <tr>
+<tr>
                     <td>⚡ Prediction Time</td>
                     <td>0.03 sec</td>
-                </tr>
+</tr>
 
 </table>
 </div>
