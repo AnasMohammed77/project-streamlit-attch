@@ -183,7 +183,7 @@ with col_2:
         </i>
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
-
+        <i style="font-size:10px;">
         <h3 style="font-size:15px ">3.1 Size & Structure: </h3>
         <p>
                 It contains approximately 2.5 million records distributed across 45 
