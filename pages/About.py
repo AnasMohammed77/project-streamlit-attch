@@ -127,8 +127,7 @@ st.markdown("""
 st.write("")
     if st.button("🔍 Prediction",width="stretch"):
                 st.switch_page("pages/Prediction.py")
-
-    st.markdown("""
+st.markdown("""
         <div style="border:2px dashed;margin:50px 0;padding:10px;border-radius:30px;text-algin:center">
         <h4> Developed by:</h4>
                     
