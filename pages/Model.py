@@ -79,15 +79,15 @@ st.markdown("""
         }
 
         h1 {
-            font-size: 28px !important;
+            font-size: 2px !important;
         }
 
         h2 {
-            font-size: 23px !important;
+            font-size: 2px !important;
         }
 
         h3 {
-            font-size: 19px !important;
+            font-size: 1px !important;
         }
 
     }
