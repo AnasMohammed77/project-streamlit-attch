@@ -37,8 +37,7 @@ col_1,col_2,col_3=st.columns([1,5,1])
 with col_2:
         st.image("imge.jpg")
 
-
-    st.markdown("""
+st.markdown("""
     <div style="background:#9CA3AF;font-size:20px;padding:20px;border-radius:25px;">
     <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
@@ -125,7 +124,7 @@ with col_2:
     </div>   
     </div>
     """,unsafe_allow_html=True)
-    st.write("")
+st.write("")
     if st.button("🔍 Prediction",width="stretch"):
                 st.switch_page("pages/Prediction.py")
 
