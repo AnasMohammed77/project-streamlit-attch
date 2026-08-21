@@ -11,6 +11,10 @@ border:non ;
     my-image{
     width:20px
     }
+    h3{
+    font-size:10px;
+
+    }
     </style>
 
     """,unsafe_allow_html=True)
@@ -117,15 +121,15 @@ with col_2:
               ↓
      * Data Preprocessing
               ↓
-       * Random Forest
-                                        ↓
-       * Multiple Decision Tree
-             ↓
-       * Votive 
-             ↓
-      * Final Prediction
-             ↓
-      * Normal / Attack Type
+     * Random Forest
+              ↓
+     * Multiple Decision Tree
+              ↓
+     * Votive 
+              ↓
+     * Final Prediction
+              ↓
+     * Normal / Attack Type
         </div>
         <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
 
@@ -265,11 +269,11 @@ with col_2:
                 <div style="background:white;font-size:20px;padding:20px;border-radius:25px;margin:10px 0">
         <div style="text-align:center;border-radius:10px;border:2px dashed;">
         <h2 style="background:#00ffff;border-radius:25px;">Contact Me</h2>
-                        <p style="border-radius:70px;background:#00ffff;text-decoration:none;margin:5px 250px"><a href="https://mailto:alsnwyansmhmdbdaljlyl@gmail.com"> @Emial.com</a></p>
-                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;margin:5px 250px"><i class="fa-brands fa-whatsapp"></i></i><a href="https://wa.me/967776713367">WhatsApp</a></a></p>
-                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;margin:5px 250px"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://m.me/ans.mhmd.alsnwy">Messenger</a></p>
-                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;margin:5px 250px"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/share/19Fw8BRK99/">Facebook</a></p>
-                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;margin:5px 250px"><i class="fab fa-telegram"></i> <a href="https://t.me/Anas_Alsanwy" target="_blank">Telegram</a></p>
+                        <p style="border-radius:70px;background:#00ffff;text-decoration:none;"><a href="https://mailto:alsnwyansmhmdbdaljlyl@gmail.com"> @Emial.com</a></p>
+                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><i class="fa-brands fa-whatsapp"></i></i><a href="https://wa.me/967776713367">WhatsApp</a></a></p>
+                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://m.me/ans.mhmd.alsnwy">Messenger</a></p>
+                        <p style="border-radius:50px;background:#00ffff;text-decoration:none"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/share/19Fw8BRK99/">Facebook</a></p>
+                        <p style="border-radius:50px;background:#00ffff;text-decoration:none;"><i class="fab fa-telegram"></i> <a href="https://t.me/Anas_Alsanwy" target="_blank">Telegram</a></p>
         </div> 
         </i>
         </div>   
